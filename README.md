@@ -17,10 +17,25 @@ ${HOME}
               └── .vimrc
 ```
 
-## Vim for fun
+## A note of vim
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#comment">Comment</a></li>
+    <li><a href="#scroll">Scroll</a></li>
+    <li><a href="#search">Search</a></li>
+    <li><a href="#undo-redo">Undo & redo</a></li>
+    <li><a href="#move-cursor">References</a></li>
+    <li><a href="#indent-Unindent">References</a></li>
+    <li><a href="#yank-paste">Yank & Paste</a></li>
+  </ol>
+</details>
 
 ### Comment
 All the following commands begin at **Command Mode** and end at **Command Mode**.
+
 **Multi lines comment**
 1. `ctrl`+`v` choose 'first rectangle of lines' you hope to comment
 2. `shift`+`i` insert comment symbols
@@ -46,7 +61,7 @@ All the following commands begin at **Command Mode** and end at **Command Mode**
 3. `n` search forward
 3. `shift`+`n` search backward
 
-### Undo & redo
+### Undo & Redo
 1. `u` undo
 2. `ctrl`+`r` redo
 
@@ -65,7 +80,7 @@ All the following commands begin at **Command Mode** and end at **Command Mode**
 1. `shift`+`v` choose 'lines' you hope to indent
 2. `<` unindent a 'tab' you set
 
-### Yank & paste
+### Yank & Paste
 1. `v` select which you hope to copy
 2. `esc` and move cursor to where you hope to paste
 3. `p` paste it
