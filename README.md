@@ -7,7 +7,7 @@ ${HOME}
 ├── .tmux.conf
 ├── .vimrc
 └── .config
-		├── sh
+        ├── sh
         │     ├── .aliases
         │     ├── .bashrc
         │     └── .source
@@ -26,10 +26,10 @@ ${HOME}
     <li><a href="#comment">Comment</a></li>
     <li><a href="#scroll">Scroll</a></li>
     <li><a href="#search">Search</a></li>
-    <li><a href="#undo-redo">Undo & redo</a></li>
-    <li><a href="#move-cursor">References</a></li>
-    <li><a href="#indent-Unindent">References</a></li>
-    <li><a href="#yank-paste">Yank & Paste</a></li>
+    <li><a href="#undo--redo">Undo & Redo</a></li>
+    <li><a href="#move-cursor">Move the cursor</a></li>
+    <li><a href="#indent--unindent">Indent & Unindent</a></li>
+    <li><a href="#yank--paste">Yank & Paste</a></li>
   </ol>
 </details>
 
@@ -65,7 +65,7 @@ All the following commands begin at **Command Mode** and end at **Command Mode**
 1. `u` undo
 2. `ctrl`+`r` redo
 
-### Move cursor
+### Move the cursor
 1. `0` 0-th 'word' of line
 2. `$` last word of line _Don't take money too seriously!_
 3. `gg` move to the first line
