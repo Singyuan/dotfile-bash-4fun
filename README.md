@@ -1,4 +1,4 @@
-# Configuration for Bash (Just a note)
+# Configuration for Bash (Just a Note)
 
 ## Structure
 ```
@@ -16,6 +16,35 @@ ${HOME}
         └── vim
               └── .vimrc
 ```
+
+## A note of tmux
+
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#session">Session</a></li>
+    <li><a href="#window">Window</a></li>
+    <li><a href="#pane">Pane</a></li>
+  </ol>
+</details>
+
+### Session
+1. `opt`+`s` select session by list
+2. `opt`+`shift`+`q` quit this session
+3. `opt`+`shift`+`n` name this session
+3. `opt`+`d` detach this session
+
+### Window
+1. `opt`+`c` create new window
+2. `opt`+`q` quit this window
+3. `opt`+`number` select particular window
+
+### Pane
+1. `opt`+`\` split window horizontal
+2. `opt`+`enter` split window vertical
+3. `opt`+`x` close this pane
+4. `opt`+`h` (`j`, `k`, `l`) move to left (up, down, right)
+
 
 ## A note of vim
 
@@ -58,18 +87,19 @@ All the following commands begin at **Command Mode** and end at **Command Mode**
 ### Search
 1. `/` search forward
 2. `?` search backward
-3. `n` search forward
-3. `shift`+`n` search backward
+3. `n` search next
+3. `shift`+`n` search previous
 
 ### Undo & Redo
 1. `u` undo
 2. `ctrl`+`r` redo
 
 ### Move the cursor
-1. `0` 0-th 'word' of line
-2. `$` last word of line _Don't take money too seriously!_
-3. `gg` move to the first line
-4. `shift`+`g` move to the last line
+1. `0` 0-th 'word' of this line
+2. `$` last word of this line _Don't take money too seriously!_
+3. `gg` go to the first line
+4. `shift`+`g` go to the last line
+5. `:number` jump to particular line
 
 ### Indent & Unindent
 **Indent**
@@ -80,7 +110,11 @@ All the following commands begin at **Command Mode** and end at **Command Mode**
 1. `shift`+`v` choose 'lines' you hope to indent
 2. `<` unindent a 'tab' you set
 
-### Yank & Paste
-1. `v` select which you hope to copy
+### Copy & Paste
+1. `v` select which you hope to yank
 2. `esc` and move cursor to where you hope to paste
 3. `p` paste it
+
+## Git alias
+1. `undo` = `reset --soft HEAD^` reset commit
+2. `rmall` = `rm -r --cached` remove track this file everywhere (If you forget to create git ignore file.)

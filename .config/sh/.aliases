@@ -46,3 +46,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 alias cdd='cd ~/Documents'
 alias bejs="open -a 'Google Chrome' http://127.0.0.1:4000; bundle exec jekyll serve"
+
+
+# Git
+alias undo=reset --soft HEAD^
+alias rmall=rm -r --cached
