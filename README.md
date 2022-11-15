@@ -168,9 +168,46 @@ cp -r !(subfoler) ./subfolder
 * `mv *` move all files ignore folder
 * `mv !(ignorefile|ignorefoler)`  move except ignorefile and ignorefoler
 
+**rename**
+`mv oldnmae newname`
+
 ### Search DNS
 `nslookup`
 
 ### Ping
 * google DNS `ping 8.8.8.8`
 * HiNet DNS `ping 168.95.1.1`
+
+### Echo
+`echo "alias python3=/usr/local/bin/python3.x" >> ~/.bashrc`
+
+
+## Miniconda
+```
+miniconda3
+├── include
+├── envs
+├── lib
+│     └── python3.9
+│          └── site-packages
+└── bin
+      ├── activate
+      ├── pip
+      ├── python
+      └── python3 -> /usr/local/bin/python3.x
+```
+* `echo "alias python3=/usr/local/bin/python3.x" >> ~/.bashrc`
+
+### Create a virtual environment
+1. `conda create -n [name] python=3.9`
+2. `conda activate [name]`
+3. `conda deactivate`
+
+### Delete a virtual environment
+1. `conda env remove -n [name]`
+
+### List
+`conda env list`
+
+## Remote
+Please refer to this [websit](https://code.visualstudio.com/docs/remote/ssh).
