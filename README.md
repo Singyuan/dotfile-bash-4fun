@@ -151,35 +151,26 @@ All the following commands begin at **Command Mode** and end at **Command Mode**
 2. `scp file1 myuser@140.112.51.1:/path/folder`
 
 ### Create empty file
-**create one**
-1. `touch empty.txt`
-
-**create lots**
-1. `touch empty{1..10}.txt`
+* `touch empty.txt` create one file
+* `touch empty{1..10}.txt` create lots of files
 
 ### Copy
-```
-cp -r copy folder
-cp -i ask brfore overwrite
-cp * copy all files ignore folder
-cp -r !(ignorefile|ignorefoler)  copy except ignorefile and ignorefoler
-```
+* `cp -r` copy folder
+* `cp -i` ask before overwrite
+* `cp *` copy all files ignore folder
+* `cp -r !(ignorefile|ignorefoler)`  copy except ignorefile and ignorefoler
+
 **copy files to subfolder**
 cp -r !(subfoler) ./subfolder
 
 ### Move
-```
-mv -f force to overwrite
-mv * move all files ignore folder
-mv !(ignorefile|ignorefoler)  move except ignorefile and ignorefoler
-```
+* `mv -f` force to overwrite
+* `mv *` move all files ignore folder
+* `mv !(ignorefile|ignorefoler)`  move except ignorefile and ignorefoler
 
 ### Search DNS
 `nslookup`
 
 ### Ping
-**google DNS**
-`ping 8.8.8.8`
-
-**HiNet DNS**
-`ping 168.95.1.1`
+* google DNS `ping 8.8.8.8`
+* HiNet DNS `ping 168.95.1.1`
